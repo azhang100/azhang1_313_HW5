@@ -3,7 +3,7 @@
 # random apt-get stuff
 cd ~
 sudo apt-get update
-sudo apt-get install arduino python gedit terminator chromium-browser git python-pip python-tk screen
+sudo apt-get install tmux arduino python gedit terminator chromium-browser git python-pip python-tk screen
 
 # touchpad indicator
 sudo add-apt-repository ppa:atareao/atareao
