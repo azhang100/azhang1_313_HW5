@@ -1,3 +1,5 @@
+cd ~
+
 # git clone "https://github.com/azhang100/ubuntu_setup.git"
 git clone "https://github.com/PipeDreamRobotics/radPiper.git"
 git clone "https://github.com/joshs333/PipeTodd.git"

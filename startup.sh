@@ -1,7 +1,7 @@
 # random apt-get stuff
 cd ~
 sudo apt-get update
-sudo apt-get install tmux arduino python gedit terminator chromium-browser git python-pip python-tk screen
+sudo apt-get install tmux arduino python gedit terminator chromium-browser git python-pip python-tk screen python3 python3-pip
  
 # dropbox
 sudo echo 'deb [arch=i386,amd64] http://linux.dropbox.com/ubuntu xenial main' >> /etc/apt/sources.list
@@ -35,6 +35,7 @@ git config --global user.name "azhang100"
 
 # more python stuff
 sudo -H pip2 install datetime numpy scipy matplotlib
+sudo pip3 install datetime numpy scipy matplotlib
 
 # sublime
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -

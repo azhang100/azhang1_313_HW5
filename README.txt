@@ -10,4 +10,5 @@ git clone "https://github.com/azhang100/ubuntu_setup.git"
 # run scripts
 cd ubuntu_setup
 ./startup.sh
-./setup_dropbox.sh
+#./setup_dropbox.sh
+./git_repos.sh
