@@ -1,7 +1,7 @@
 # random apt-get stuff
 cd ~
 sudo apt-get update
-sudo apt-get install tmux arduino python gedit terminator chromium-browser git python-pip python-tk screen python3 python3-pip
+sudo apt-get install tmux arduino python gedit terminator chromium-browser git python-pip python-tk screen python3 python3-pip python3-tk
  
 # dropbox
 sudo echo 'deb [arch=i386,amd64] http://linux.dropbox.com/ubuntu xenial main' >> /etc/apt/sources.list
@@ -16,7 +16,19 @@ sudo add-apt-repository ppa:atareao/atareao
 sudo apt-get update
 sudo apt-get install touchpad-indicator
 # echo 'touchpad-indicator &' ~/.bashrc
-echo "alias trackpad='touchpad-indicator &'"
+echo "alias trackpad='touchpad-indicator &'" > ~/.bashrc
+
+# vpn
+# sudo apt-get install openvpn unzip
+# cd /etc/openvpn
+# sudo apt-get install ca-certificates
+# sudo wget https://downloads.nordcdn.com/configs/archives/servers/ovpn.zip
+# sudo unzip ovpn.zip
+# sudo rm ovpn.zip
+# cd /etc/openvpn/ovpn_udp/
+# cd /etc/openvpn/ovpn_tcp/
+# ls -al
+# sudo openvpn us936.nordvpn.com.udp.ovpn
 
 # ros kinetic
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -35,7 +47,7 @@ git config --global user.name "azhang100"
 
 # more python stuff
 sudo -H pip2 install datetime numpy scipy matplotlib
-sudo pip3 install datetime numpy scipy matplotlib
+sudo pip3 install numpy scipy scikit-image matplotlib
 
 # sublime
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -45,3 +57,4 @@ sudo apt-get install sublime-text
 
 # alias
 echo "alias rossource='source devel/setup.bashrc'" >> ~/.bashrc
+echo "alias gitcredential='git config credential.helper store'" >> ~/.bashrc
