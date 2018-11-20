@@ -8,8 +8,14 @@ sudo echo 'deb [arch=i386,amd64] http://linux.dropbox.com/ubuntu xenial main' >>
 sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
 sudo apt update
 sudo apt install nautilus-dropbox python-gpgme
-dropbox start
-echo 'dropbox start' > ~/.bashrc
+# dropbox start
+# echo 'dropbox start' > ~/.bashrc
+
+# skype
+sudo dpkg --add-architecture i386
+sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+sudo apt-get update && sudo apt-get install skype
+# echo 'skype' > ~/.bashrc
 
 # touchpad indicator
 sudo add-apt-repository ppa:atareao/atareao
